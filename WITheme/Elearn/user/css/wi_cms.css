@@ -1,0 +1,2585 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+
+
+/* layout css only
+   
+*/
+
+
+
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+
+
+*::-moz-selection {
+    background: none repeat scroll 0 0 #e74c3c;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+    width: 88.2%;
+    max-width: 1232px;
+    padding-left: 0.9%;
+    padding-right: 0.9%;
+    margin: auto;
+}
+#LayoutDiv1 {
+    clear: both;
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+}
+
+.col-head
+{
+    width: 100%;
+    height: 90px;
+}
+
+.col-xl
+{
+    width: 100%;
+    height: auto;
+}
+
+.col-logo
+{
+    width: 15%;
+    float: left;
+    height: 90px;
+}
+
+.col-ms
+{
+    width: 85%;
+    float: left;
+    height: 90px;
+}
+
+.logo
+{
+    width: 100%;
+    height: 90px;
+}
+
+.head
+{
+    width: 100%;
+    height: 90px;
+}
+
+.col-menu
+{
+    width: 100%;
+    height: 40px;
+       background-color: #EEE;
+}
+
+.col-content
+{
+    width: 100%;
+    background-color: white;
+    display:block;
+overflow:auto;
+
+}
+
+.col-tl
+{
+width: 28%;
+    height: 60px;
+    margin-left: 285px;
+
+}
+
+.col-long
+{
+    width: 40%;
+    background-color: white;
+    height: 42px;
+    margin-left: 283px;
+    margin-top: 45px;
+}
+
+.col-footer
+{
+    width: 55%;
+    height: 60px;
+    margin-left: 304px;
+}
+
+footer
+{
+    width: 100%;
+    height: 60px;
+    margin-top: 0px;
+    background-color: white;
+  
+}
+
+/* panel css */
+.sb-search {
+    position: relative;
+    width: 0%;
+    min-width: 40px;
+    max-height: 39px;
+    float: right;
+    overflow: hidden;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    transition: width 0.3s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+input[type="text"], input[type="email"] {
+    border-radius: 0;
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #e9e9e9;
+    color: #A3A3A3;
+    height: 40px;
+    font-size: 13px;
+    box-shadow: none;
+}
+
+.sb-icon-search {
+    color: #888;
+    background: #ffffff;
+    z-index: 90;
+    font-size: 16px;
+    font-family: 'FontAwesome';
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+.sb-icon-search:before {
+    content: "\f002";
+}
+
+.social_media {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: -87px;
+    width: 70%;
+}
+
+.social_media li {
+    float: left;
+}
+
+.social_media li a {
+    color: #888;
+    display: block;
+    height: 39px;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    text-indent: -500em;
+    width: 39px;
+    transition: all 0.17s ease-in-out;
+    -moz-transition: all 0.17s ease-in-out;
+    -webkit-transition: all 0.17s ease-in-out;
+    -o-transition: all 0.17s ease-in-out;
+}
+
+
+.social_media li a:before {
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    text-indent: 0em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* all the below css needs to be placed in to a new css named front page */
+
+/* HOME PAGE */
+
+.semi-title
+{
+    width: 25%;
+    margin-left: 324px;
+    font-size: x-large;
+}
+
+.sub-title
+{
+    width: 50%;
+    margin-left: 345px;
+    padding: 5px;
+}
+
+.semi-para
+{
+  width: 60%;
+    margin-left: 163px;  
+}
+
+.main-para
+{
+  width: 60%;
+    margin-left: 163px;  
+}
+
+.end-para
+{
+  width: 60%;
+    margin-left: 163px;  
+}
+
+.quate
+{
+  width: 60%;
+    margin-left: 163px;  
+}
+
+.group_pic
+{
+
+}
+
+.home-pic
+{
+    
+}
+
+
+/* contact us PAGE */
+
+#map {
+    width: 425px;
+    height: 400px;
+    float: left;
+    margin-left: 30px;
+}
+
+.addy {
+    float: left;
+    width: 32%;
+    margin-left: 30px;
+}
+
+.phone {
+    width: 34%;
+    float: left;
+    margin-left: 15px;
+}
+
+.email {
+    width: 32%;
+    float: left;
+    margin-left: 16px;
+}
+
+.main-title
+{
+        width: 245px;
+    margin-left: 279px;
+    padding: 20px;
+}
+
+/*  About us page */
+
+.about_pic1
+{
+    width: 78%;
+    float: left;
+    margin-left: 69px;
+}
+
+.about_pic
+{
+    width: 45%;
+    float: left;
+}
+
+.paragraph
+{
+    width: 50%;
+    margin-left: 18px;
+    float: left;
+}
+
+.paragraph1
+{
+        float: left;
+    width: 50%;
+    margin-left: 42px;
+    padding: 50px;
+}
+
+
+/*  cafe and shop  page */
+
+.paragraph2
+{
+    float: left;
+    width: 43%;
+    margin-left: 42px;
+    padding: 16px;
+    margin-top: -284px;
+}
+
+/*  cafe page */
+
+.cafe_content
+{
+    width: 100%;
+    background-image: url('../img/chalkboard.jpg');
+    background-attachment: initial;
+    background-position: center;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: inherit;
+    height: 850px;
+}
+
+.inner-cafe {
+    width: 100%;
+}
+
+.sub_title
+{
+        width: 38%;
+    font-size: -webkit-xxx-large;
+    margin-left: 415px;
+    color: white;
+}
+
+.title {
+    width: 60%;
+    height: 86px;
+    margin-left: 227px;
+    font-size: 4em;
+    color: white;
+    padding: 5px;
+}
+
+.sand {
+    width: 100%;
+}
+
+.barn {
+    width: 36%;
+    margin-left: 336px;
+    color: white;
+    font-size: 1.8em;
+    padding: 5px;
+}
+
+.sand_inner {
+    width: 100%;
+    float: left;
+}
+
+.sandwiches {
+    width: 37%;
+    float: left;
+    margin-left: 80px;
+}
+
+.select_sand {
+    float: left;
+    width: 55%;
+    color: #ADA8A8;
+}
+
+.without {
+    width: 15%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.pricing {
+    float: left;
+    width: 100%;
+    color: #ADA8A8;
+}
+
+.wsalad {
+    width: 22%;
+    float: left;
+    margin-left: 408px;
+    color: #ADA8A8;
+}
+
+.salad {
+    width: 20%;
+    float: left;
+    margin-left: 5px;
+    color: #ADA8A8;
+}
+
+.sandwich
+{
+
+}
+
+.sandwiches {
+    width: 45%;
+    float: left;
+}
+
+.select_sand {
+    float: left;
+    width: 55%;
+    color: #ADA8A8;
+}
+
+.with {
+    width: 15%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.Spricing {
+    float: left;
+    width: 100%;
+    margin-left: 55px;
+    color: #ADA8A8;
+}
+
+.subs {
+    width: 90%;
+    margin-top: 175px;
+    height: 227px;
+    margin-left: 101px;
+}
+
+.extra {
+    width: 40%;
+    float: left;
+    margin-left: 85px;
+}
+
+.sub_title1 {
+    width: 32%;
+    margin-left: 140px;
+    font-size: 1.5em;
+    font-family: initial;
+    color: white;
+}
+
+.c_item {
+    width: 45%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.cpricing {
+    width: 18%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.jackets_s {
+    width: 50%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.sub_title2 {
+    width: 61%;
+    margin-left: 13px;
+    font-size: 1.5em;
+    /* margin-top: -63px; */
+    font-family: initial;
+    color: white;
+}
+
+.j_item {
+    width: 44%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.j_pricing {
+    width: 20%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.drinks {
+    width: 40%;
+    height: 228px;
+    margin-left: 344px;
+}
+
+.sub_title3 {
+    width: 30%;
+    margin-left: 73px;
+    font-size: 1.5em;
+    /* margin-top: -63px; */
+    font-family: initial;
+    color: white;
+}
+
+.d_item {
+    width: 51%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.d_pricing {
+    width: 20%;
+    float: left;
+    color: #ADA8A8;
+}
+
+/* services page  */
+
+.services
+{
+    width: 90%;
+    height: 400px;
+    margin-left: 48px;
+}
+
+.services-title {
+    width: 60%;
+    height: 86px;
+    margin-left: 227px;
+    font-size: 4em;
+    color: black;
+    padding: 5px;
+}
+
+.helplines
+{
+    width: 32%;
+    height: 250px;
+    padding: 5px;
+    float: left;
+        margin-left: 5px;
+}
+
+.donate
+{
+    width: 32%;
+    height: 250px;
+    padding: 5px;
+     float: left;
+         margin-left: 5px;
+}
+
+
+.collections
+{
+    width: 32%;
+    height: 250px;
+    padding: 5px;
+     float: left;
+         margin-left: 5px;
+}
+
+
+
+.hicon
+{
+width: 73%;
+    height: 61px;
+    margin-left: 31px;
+    background-image: url('../img/helpline_partnership_member.jpg');
+    background-size: 202px;
+    background-position-y: 125px;
+}
+
+.dicon
+{
+    width: 73%;
+    height: 60px;
+    margin-left: 26px;
+    background-image: url('../img/lib_donations.jpg');
+    background-size: 190px;
+}
+
+
+.cicon
+{
+    width: 76%;
+    height: 60px;
+    margin-left: 39px;
+    background-image: url('../img/collections_icon_text.jpg');
+    background-size: 216px;
+    background-position-x: -4px;
+    background-position-y: 51px;
+}
+
+
+
+
+.text
+{
+    width: 83%;
+    height: 190px;
+    padding: 5px;
+    margin-left: 21px;
+    color: black;
+    
+}
+
+
+/* collections page */
+
+/*******************************Calendar Top Navigation*********************************/
+div#calendar{
+  margin:0px auto;
+  padding:0px;
+  width: 602px;
+  font-family:Helvetica, "Times New Roman", Times, serif;
+}
+ 
+div#calendar div.box{
+    position:relative;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:40px;
+    background-color:   #787878 ;      
+}
+ 
+div#calendar div.header{
+    line-height:40px;  
+    vertical-align:middle;
+    position:absolute;
+    left:11px;
+    top:0px;
+    width:582px;
+    height:40px;   
+    text-align:center;
+}
+ 
+div#calendar div.header a.prev,div#calendar div.header a.next{ 
+    position:absolute;
+    top:0px;   
+    height: 17px;
+    display:block;
+    cursor:pointer;
+    text-decoration:none;
+    color:#FFF;
+}
+ 
+div#calendar div.header span.title{
+    color:#FFF;
+    font-size:18px;
+}
+ 
+ 
+div#calendar div.header a.prev{
+    left:0px;
+}
+ 
+div#calendar div.header a.next{
+    right:0px;
+}
+ 
+ 
+ 
+ 
+/*******************************Calendar Content Cells*********************************/
+div#calendar div.box-content{
+    border:1px solid #787878 ;
+    border-top:none;
+}
+ 
+ 
+ 
+div#calendar ul.label{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+    margin-top:5px;
+    margin-left: 5px;
+}
+ 
+div#calendar ul.label li{
+    margin:0px;
+    padding:0px;
+    margin-right:5px;  
+    float:left;
+    list-style-type:none;
+    width:80px;
+    height:40px;
+    line-height:40px;
+    vertical-align:middle;
+    text-align:center;
+    color:#000;
+    font-size: 15px;
+    background-color: transparent;
+}
+ 
+ 
+div#calendar ul.dates{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+ 
+/** overall width = width+padding-right**/
+div#calendar ul.dates li{
+    margin:0px;
+    padding:0px;
+    margin-right:5px;
+    margin-top: 5px;
+    line-height:80px;
+    vertical-align:middle;
+    float:left;
+    list-style-type:none;
+    width:80px;
+    height:80px;
+    font-size:25px;
+    background-color: #DDD;
+    color:#000;
+    text-align:center; 
+}
+ 
+:focus{
+    outline:none;
+}
+ 
+.clear{
+    clear:both;
+}  
+
+.calendar
+{
+    width: 90%;
+    margin-left: 50px;
+}
+
+.intro
+{
+    width: 80%;
+    margin-left: 96px;
+    padding: 18px;
+}
+
+.pintro
+{
+        width: 90%;
+    margin-left: 27px;
+}
+
+.not_take
+{
+        width: 80%;
+    margin-left: 91px;
+}
+
+.bits
+{
+        color: red;
+    font-size: 33px;
+}
+
+.col-lg-6 {
+    width: 46% !important;
+    margin-left: 28px;
+    height: 39px;
+    float: left;
+}
+
+.col-box
+{
+    width:100%;
+}
+
+.title
+{
+    width:60%;
+    height:60px;
+}
+
+.col-ds
+{
+    width:80%;
+    height:80px;
+}
+
+.col-help
+{
+    width:80%;
+    float:left;
+}
+
+.col-img
+{
+    width:25%;
+    height:50px;
+    float:left; 
+}
+
+.col-info
+{
+    width:60%;
+    float:left;
+}
+
+.col-name
+{
+    width:100%;
+    float:left;
+}
+
+.col-help-info
+{
+    width:100%;
+    float:left;
+}
+
+.col-link
+{
+    width:100%;
+    float:left;
+}
+
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+    width: 88.2%;
+    max-width: 1232px;
+    padding-left: 0.9%;
+    padding-right: 0.9%;
+    margin: auto;
+}
+#LayoutDiv1 {
+    clear: both;
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+}
+
+.col-head
+{
+    width: 100%;
+    height: 90px;
+}
+
+.col-xl
+{
+    width: 100%;
+    height: auto;
+}
+
+.col-logo
+{
+    width: 15%;
+    float: left;
+    height: 90px;
+}
+
+.col-ms
+{
+    width: 85%;
+    float: left;
+    height: 90px;
+}
+
+.logo
+{
+    width: 100%;
+    height: 90px;
+}
+
+.head
+{
+    width: 100%;
+    height: 90px;
+}
+
+.col-menu
+{
+    width: 100%;
+    height: 40px;
+       background-color: #EEE;
+}
+
+.col-content
+{
+    width: 100%;
+    background-color: white;
+        display:block;
+overflow:auto;
+
+}
+
+.col-tl
+{
+width: 28%;
+    height: 60px;
+    margin-left: 285px;
+
+}
+
+.col-long
+{
+    width: 40%;
+    background-color: white;
+    height: 42px;
+    margin-left: 283px;
+    margin-top: 45px;
+}
+
+.col-footer
+{
+    width: 55%;
+    height: 60px;
+    margin-left: 304px;
+}
+
+footer
+{
+    width: 100%;
+    height: 60px;
+    margin-top: 0px;
+    background-color: white;
+  
+}
+
+/* panel css */
+.sb-search {
+    position: relative;
+    width: 0%;
+    min-width: 40px;
+    max-height: 39px;
+    float: right;
+    overflow: hidden;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    transition: width 0.3s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+input[type="text"], input[type="email"] {
+    border-radius: 0;
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #e9e9e9;
+    color: #A3A3A3;
+    height: 40px;
+    font-size: 13px;
+    box-shadow: none;
+}
+
+.sb-icon-search {
+    color: #888;
+    background: #ffffff;
+    z-index: 90;
+    font-size: 16px;
+    font-family: 'FontAwesome';
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+.sb-icon-search:before {
+    content: "\f002";
+}
+
+.social_media {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: -87px;
+    width: 70%;
+}
+
+.social_media li {
+    float: left;
+}
+
+.social_media li a {
+    color: #888;
+    display: block;
+    height: 39px;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    text-indent: -500em;
+    width: 39px;
+    transition: all 0.17s ease-in-out;
+    -moz-transition: all 0.17s ease-in-out;
+    -webkit-transition: all 0.17s ease-in-out;
+    -o-transition: all 0.17s ease-in-out;
+}
+
+
+.social_media li a:before {
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    text-indent: 0em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* all the below css needs to be placed in to a new css named front page */
+
+/* HOME PAGE */
+
+.semi-title
+{
+    width: 25%;
+    margin-left: 324px;
+    font-size: x-large;
+}
+
+.sub-title
+{
+    width: 50%;
+    margin-left: 345px;
+    padding: 5px;
+}
+
+.semi-para
+{
+  width: 60%;
+    margin-left: 163px;  
+}
+
+.main-para
+{
+  width: 60%;
+    margin-left: 163px;  
+}
+
+.end-para
+{
+  width: 60%;
+    margin-left: 163px;  
+}
+
+.quate
+{
+  width: 60%;
+    margin-left: 163px;  
+}
+
+.group_pic
+{
+
+}
+
+.home-pic
+{
+    
+}
+
+
+/* contact us PAGE */
+
+#map {
+    width: 425px;
+    height: 400px;
+    float: left;
+    margin-left: 30px;
+}
+
+.addy {
+    float: left;
+    width: 32%;
+    margin-left: 30px;
+}
+
+.phone {
+    width: 34%;
+    float: left;
+    margin-left: 15px;
+}
+
+.email {
+    width: 32%;
+    float: left;
+    margin-left: 16px;
+}
+
+.main-title
+{
+        width: 245px;
+    margin-left: 279px;
+    padding: 20px;
+}
+
+/*  About us page */
+
+.about_pic1
+{
+    width: 78%;
+    float: left;
+    margin-left: 69px;
+}
+
+.about_pic
+{
+    width: 45%;
+    float: left;
+}
+
+.paragraph
+{
+    width: 50%;
+    margin-left: 18px;
+    float: left;
+}
+
+.paragraph1
+{
+        float: left;
+    width: 50%;
+    margin-left: 42px;
+    padding: 50px;
+}
+
+
+/*  cafe and shop  page */
+
+.paragraph2
+{
+    float: left;
+    width: 43%;
+    margin-left: 42px;
+    padding: 16px;
+    margin-top: -284px;
+}
+
+/*  cafe page */
+
+.cafe_content
+{
+    width: 100%;
+    background-image: url('../img/chalkboard.jpg');
+    background-attachment: initial;
+    background-position: center;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: inherit;
+    height: 850px;
+}
+
+.inner-cafe {
+    width: 100%;
+}
+
+.sub_title
+{
+        width: 38%;
+    font-size: -webkit-xxx-large;
+    margin-left: 415px;
+    color: white;
+}
+
+.title {
+    width: 60%;
+    height: 86px;
+    margin-left: 227px;
+    font-size: 4em;
+    color: white;
+    padding: 5px;
+}
+
+.sand {
+    width: 100%;
+}
+
+.barn {
+    width: 36%;
+    margin-left: 336px;
+    color: white;
+    font-size: 1.8em;
+    padding: 5px;
+}
+
+.sand_inner {
+    width: 100%;
+    float: left;
+}
+
+.sandwiches {
+    width: 37%;
+    float: left;
+    margin-left: 80px;
+}
+
+.select_sand {
+    float: left;
+    width: 55%;
+    color: #ADA8A8;
+}
+
+.without {
+    width: 15%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.pricing {
+    float: left;
+    width: 100%;
+    color: #ADA8A8;
+}
+
+.wsalad {
+    width: 22%;
+    float: left;
+    margin-left: 408px;
+    color: #ADA8A8;
+}
+
+.salad {
+    width: 20%;
+    float: left;
+    margin-left: 5px;
+    color: #ADA8A8;
+}
+
+.sandwich
+{
+
+}
+
+.sandwiches {
+    width: 45%;
+    float: left;
+}
+
+.select_sand {
+    float: left;
+    width: 55%;
+    color: #ADA8A8;
+}
+
+.with {
+    width: 15%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.Spricing {
+    float: left;
+    width: 100%;
+    margin-left: 55px;
+    color: #ADA8A8;
+}
+
+.subs {
+    width: 90%;
+    margin-top: 175px;
+    height: 227px;
+    margin-left: 101px;
+}
+
+.extra {
+    width: 40%;
+    float: left;
+    margin-left: 85px;
+}
+
+.sub_title1 {
+    width: 32%;
+    margin-left: 140px;
+    font-size: 1.5em;
+    font-family: initial;
+    color: white;
+}
+
+.c_item {
+    width: 45%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.cpricing {
+    width: 18%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.jackets_s {
+    width: 50%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.sub_title2 {
+    width: 61%;
+    margin-left: 13px;
+    font-size: 1.5em;
+    /* margin-top: -63px; */
+    font-family: initial;
+    color: white;
+}
+
+.j_item {
+    width: 44%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.j_pricing {
+    width: 20%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.drinks {
+    width: 40%;
+    height: 228px;
+    margin-left: 344px;
+}
+
+.sub_title3 {
+    width: 30%;
+    margin-left: 73px;
+    font-size: 1.5em;
+    /* margin-top: -63px; */
+    font-family: initial;
+    color: white;
+}
+
+.d_item {
+    width: 51%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.d_pricing {
+    width: 20%;
+    float: left;
+    color: #ADA8A8;
+}
+
+/* services page  */
+
+.services
+{
+    width: 90%;
+    height: 400px;
+    margin-left: 48px;
+}
+
+.services-title {
+    width: 60%;
+    height: 86px;
+    margin-left: 227px;
+    font-size: 4em;
+    color: black;
+    padding: 5px;
+}
+
+.helplines
+{
+    width: 32%;
+    height: 250px;
+    padding: 5px;
+    float: left;
+        margin-left: 5px;
+}
+
+.donate
+{
+    width: 32%;
+    height: 250px;
+    padding: 5px;
+     float: left;
+         margin-left: 5px;
+}
+
+
+.collections
+{
+    width: 32%;
+    height: 250px;
+    padding: 5px;
+     float: left;
+         margin-left: 5px;
+}
+
+
+
+.hicon
+{
+width: 73%;
+    height: 61px;
+    margin-left: 31px;
+    background-image: url('../img/helpline_partnership_member.jpg');
+    background-size: 202px;
+    background-position-y: 125px;
+}
+
+.dicon
+{
+    width: 73%;
+    height: 60px;
+    margin-left: 26px;
+    background-image: url('../img/lib_donations.jpg');
+    background-size: 190px;
+}
+
+
+.cicon
+{
+    width: 76%;
+    height: 60px;
+    margin-left: 39px;
+    background-image: url('../img/collections_icon_text.jpg');
+    background-size: 216px;
+    background-position-x: -4px;
+    background-position-y: 51px;
+}
+
+
+
+
+.text
+{
+    width: 83%;
+    height: 190px;
+    padding: 5px;
+    margin-left: 21px;
+    color: black;
+    
+}
+
+
+/* collections page */
+
+/*******************************Calendar Top Navigation*********************************/
+div#calendar{
+  margin:0px auto;
+  padding:0px;
+  width: 602px;
+  font-family:Helvetica, "Times New Roman", Times, serif;
+}
+ 
+div#calendar div.box{
+    position:relative;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:40px;
+    background-color:   #787878 ;      
+}
+ 
+div#calendar div.header{
+    line-height:40px;  
+    vertical-align:middle;
+    position:absolute;
+    left:11px;
+    top:0px;
+    width:582px;
+    height:40px;   
+    text-align:center;
+}
+ 
+div#calendar div.header a.prev,div#calendar div.header a.next{ 
+    position:absolute;
+    top:0px;   
+    height: 17px;
+    display:block;
+    cursor:pointer;
+    text-decoration:none;
+    color:#FFF;
+}
+ 
+div#calendar div.header span.title{
+    color:#FFF;
+    font-size:18px;
+}
+ 
+ 
+div#calendar div.header a.prev{
+    left:0px;
+}
+ 
+div#calendar div.header a.next{
+    right:0px;
+}
+ 
+ 
+ 
+ 
+/*******************************Calendar Content Cells*********************************/
+div#calendar div.box-content{
+    border:1px solid #787878 ;
+    border-top:none;
+}
+ 
+ 
+ 
+div#calendar ul.label{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+    margin-top:5px;
+    margin-left: 5px;
+}
+ 
+div#calendar ul.label li{
+    margin:0px;
+    padding:0px;
+    margin-right:5px;  
+    float:left;
+    list-style-type:none;
+    width:80px;
+    height:40px;
+    line-height:40px;
+    vertical-align:middle;
+    text-align:center;
+    color:#000;
+    font-size: 15px;
+    background-color: transparent;
+}
+ 
+ 
+div#calendar ul.dates{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+ 
+/** overall width = width+padding-right**/
+div#calendar ul.dates li{
+    margin:0px;
+    padding:0px;
+    margin-right:5px;
+    margin-top: 5px;
+    line-height:80px;
+    vertical-align:middle;
+    float:left;
+    list-style-type:none;
+    width:80px;
+    height:80px;
+    font-size:25px;
+    background-color: #DDD;
+    color:#000;
+    text-align:center; 
+}
+ 
+:focus{
+    outline:none;
+}
+ 
+.clear{
+    clear:both;
+}  
+
+.calendar
+{
+    width: 90%;
+    margin-left: 50px;
+}
+
+.intro
+{
+    width: 80%;
+    margin-left: 96px;
+    padding: 18px;
+}
+
+.pintro
+{
+        width: 90%;
+    margin-left: 27px;
+}
+
+.not_take
+{
+        width: 80%;
+    margin-left: 91px;
+}
+
+.bits
+{
+        color: red;
+    font-size: 33px;
+}
+
+.col-lg-6 {
+    width: 46% !important;
+    margin-left: 28px;
+    height: 39px;
+    float: left;
+}
+
+.col-box
+{
+    width:100%;
+}
+
+.title
+{
+    width:60%;
+    height:60px;
+}
+
+.col-ds
+{
+    width:80%;
+    height:80px;
+}
+
+.col-help
+{
+    width:80%;
+    float:left;
+}
+
+.col-img
+{
+    width:25%;
+    height:50px;
+    float:left; 
+}
+
+.col-info
+{
+    width:60%;
+    float:left;
+}
+
+.col-name
+{
+    width:100%;
+    float:left;
+}
+
+.col-help-info
+{
+    width:100%;
+    float:left;
+}
+
+.col-link
+{
+    width:100%;
+    float:left;
+}
+
+
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+.col-head
+{
+    width: 100%;
+    height: 90px;
+}
+
+.col-xl
+{
+    width: 100%;
+    height: auto;
+}
+
+.col-logo
+{
+    width: 15%;
+    float: left;
+    height: 90px;
+}
+
+.col-ms
+{
+    width: 85%;
+    float: left;
+    height: 90px;
+}
+
+.logo
+{
+    width: 100%;
+    height: 90px;
+}
+
+.head
+{
+    width: 100%;
+    height: 90px;
+}
+
+.col-menu
+{
+    width: 100%;
+    height: 40px;
+       background-color: #EEE;
+}
+
+.col-content
+{
+    width: 100%;
+    background-color: white;
+        display:block;
+overflow:auto;
+
+}
+
+.col-tl
+{
+width: 28%;
+    height: 60px;
+    margin-left: 285px;
+
+}
+
+.col-long
+{
+    width: 40%;
+    background-color: white;
+    height: 42px;
+    margin-left: 283px;
+    margin-top: 45px;
+}
+
+.col-footer
+{
+    width: 55%;
+    height: 60px;
+    margin-left: 304px;
+}
+
+footer
+{
+    width: 100%;
+    height: 60px;
+    margin-top: 0px;
+    background-color: white;
+  
+}
+
+/* panel css */
+.sb-search {
+    position: relative;
+    width: 0%;
+    min-width: 40px;
+    max-height: 39px;
+    float: right;
+    overflow: hidden;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    transition: width 0.3s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+input[type="text"], input[type="email"] {
+    border-radius: 0;
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #e9e9e9;
+    color: #A3A3A3;
+    height: 40px;
+    font-size: 13px;
+    box-shadow: none;
+}
+
+.sb-icon-search {
+    color: #888;
+    background: #ffffff;
+    z-index: 90;
+    font-size: 16px;
+    font-family: 'FontAwesome';
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+.sb-icon-search:before {
+    content: "\f002";
+}
+
+.social_media {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: -87px;
+    width: 70%;
+}
+
+.social_media li {
+    float: left;
+}
+
+.social_media li a {
+    color: #888;
+    display: block;
+    height: 39px;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    text-indent: -500em;
+    width: 39px;
+    transition: all 0.17s ease-in-out;
+    -moz-transition: all 0.17s ease-in-out;
+    -webkit-transition: all 0.17s ease-in-out;
+    -o-transition: all 0.17s ease-in-out;
+}
+
+
+.social_media li a:before {
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    text-indent: 0em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* all the below css needs to be placed in to a new css named front page */
+
+/* HOME PAGE */
+
+.semi-title
+{
+    width: 25%;
+    margin-left: 324px;
+    font-size: x-large;
+}
+
+.sub-title
+{
+    width: 50%;
+    margin-left: 345px;
+    padding: 5px;
+}
+
+.semi-para
+{
+  width: 60%;
+    margin-left: 163px;  
+}
+
+.main-para
+{
+  width: 60%;
+    margin-left: 163px;  
+}
+
+.end-para
+{
+  width: 60%;
+    margin-left: 163px;  
+}
+
+.quate
+{
+  width: 60%;
+    margin-left: 163px;  
+}
+
+.group_pic
+{
+
+}
+
+.home-pic
+{
+    
+}
+
+
+/* contact us PAGE */
+
+#map {
+    width: 425px;
+    height: 400px;
+    float: left;
+    margin-left: 30px;
+}
+
+.addy {
+    float: left;
+    width: 32%;
+    margin-left: 30px;
+}
+
+.phone {
+    width: 34%;
+    float: left;
+    margin-left: 15px;
+}
+
+.email {
+    width: 32%;
+    float: left;
+    margin-left: 16px;
+}
+
+.main-title
+{
+        width: 245px;
+    margin-left: 279px;
+    padding: 20px;
+}
+
+/*  About us page */
+
+.about_pic1
+{
+    width: 78%;
+    float: left;
+    margin-left: 69px;
+}
+
+.about_pic
+{
+    width: 45%;
+    float: left;
+}
+
+.paragraph
+{
+    width: 50%;
+    margin-left: 18px;
+    float: left;
+}
+
+.paragraph1
+{
+        float: left;
+    width: 50%;
+    margin-left: 42px;
+    padding: 50px;
+}
+
+
+/*  cafe and shop  page */
+
+.paragraph2
+{
+    float: left;
+    width: 43%;
+    margin-left: 42px;
+    padding: 16px;
+    margin-top: -284px;
+}
+
+/*  cafe page */
+
+.cafe_content
+{
+    width: 100%;
+    background-image: url('../img/chalkboard.jpg');
+    background-attachment: initial;
+    background-position: center;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: inherit;
+    height: 850px;
+}
+
+.inner-cafe {
+    width: 100%;
+}
+
+.sub_title
+{
+        width: 38%;
+    font-size: -webkit-xxx-large;
+    margin-left: 415px;
+    color: white;
+}
+
+.title {
+    width: 60%;
+    height: 86px;
+    margin-left: 227px;
+    font-size: 4em;
+    color: white;
+    padding: 5px;
+}
+
+.sand {
+    width: 100%;
+}
+
+.barn {
+    width: 36%;
+    margin-left: 336px;
+    color: white;
+    font-size: 1.8em;
+    padding: 5px;
+}
+
+.sand_inner {
+    width: 100%;
+    float: left;
+}
+
+.sandwiches {
+    width: 37%;
+    float: left;
+    margin-left: 80px;
+}
+
+.select_sand {
+    float: left;
+    width: 55%;
+    color: #ADA8A8;
+}
+
+.without {
+    width: 15%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.pricing {
+    float: left;
+    width: 100%;
+    color: #ADA8A8;
+}
+
+.wsalad {
+    width: 22%;
+    float: left;
+    margin-left: 408px;
+    color: #ADA8A8;
+}
+
+.salad {
+    width: 20%;
+    float: left;
+    margin-left: 5px;
+    color: #ADA8A8;
+}
+
+.sandwich
+{
+
+}
+
+.sandwiches {
+    width: 45%;
+    float: left;
+}
+
+.select_sand {
+    float: left;
+    width: 55%;
+    color: #ADA8A8;
+}
+
+.with {
+    width: 15%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.Spricing {
+    float: left;
+    width: 100%;
+    margin-left: 55px;
+    color: #ADA8A8;
+}
+
+.subs {
+    width: 90%;
+    margin-top: 175px;
+    height: 227px;
+    margin-left: 101px;
+}
+
+.extra {
+    width: 40%;
+    float: left;
+    margin-left: 85px;
+}
+
+.sub_title1 {
+    width: 32%;
+    margin-left: 140px;
+    font-size: 1.5em;
+    font-family: initial;
+    color: white;
+}
+
+.c_item {
+    width: 45%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.cpricing {
+    width: 18%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.jackets_s {
+    width: 50%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.sub_title2 {
+    width: 61%;
+    margin-left: 13px;
+    font-size: 1.5em;
+    /* margin-top: -63px; */
+    font-family: initial;
+    color: white;
+}
+
+.j_item {
+    width: 44%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.j_pricing {
+    width: 20%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.drinks {
+    width: 40%;
+    height: 228px;
+    margin-left: 344px;
+}
+
+.sub_title3 {
+    width: 30%;
+    margin-left: 73px;
+    font-size: 1.5em;
+    /* margin-top: -63px; */
+    font-family: initial;
+    color: white;
+}
+
+.d_item {
+    width: 51%;
+    float: left;
+    color: #ADA8A8;
+}
+
+.d_pricing {
+    width: 20%;
+    float: left;
+    color: #ADA8A8;
+}
+
+/* services page  */
+
+.services
+{
+    width: 90%;
+    height: 400px;
+    margin-left: 48px;
+}
+
+.services-title {
+    width: 60%;
+    height: 86px;
+    margin-left: 227px;
+    font-size: 4em;
+    color: black;
+    padding: 5px;
+}
+
+.helplines
+{
+    width: 32%;
+    height: 250px;
+    padding: 5px;
+    float: left;
+        margin-left: 5px;
+}
+
+.donate
+{
+    width: 32%;
+    height: 250px;
+    padding: 5px;
+     float: left;
+         margin-left: 5px;
+}
+
+
+.collections
+{
+    width: 32%;
+    height: 250px;
+    padding: 5px;
+     float: left;
+         margin-left: 5px;
+}
+
+
+
+.hicon
+{
+width: 73%;
+    height: 61px;
+    margin-left: 31px;
+    background-image: url('../img/helpline_partnership_member.jpg');
+    background-size: 202px;
+    background-position-y: 125px;
+}
+
+.dicon
+{
+    width: 73%;
+    height: 60px;
+    margin-left: 26px;
+    background-image: url('../img/lib_donations.jpg');
+    background-size: 190px;
+}
+
+
+.cicon
+{
+    width: 76%;
+    height: 60px;
+    margin-left: 39px;
+    background-image: url('../img/collections_icon_text.jpg');
+    background-size: 216px;
+    background-position-x: -4px;
+    background-position-y: 51px;
+}
+
+
+
+
+.text
+{
+    width: 83%;
+    height: 190px;
+    padding: 5px;
+    margin-left: 21px;
+    color: black;
+    
+}
+
+
+/* collections page */
+
+/*******************************Calendar Top Navigation*********************************/
+div#calendar{
+  margin:0px auto;
+  padding:0px;
+  width: 602px;
+  font-family:Helvetica, "Times New Roman", Times, serif;
+}
+ 
+div#calendar div.box{
+    position:relative;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:40px;
+    background-color:   #787878 ;      
+}
+ 
+div#calendar div.header{
+    line-height:40px;  
+    vertical-align:middle;
+    position:absolute;
+    left:11px;
+    top:0px;
+    width:582px;
+    height:40px;   
+    text-align:center;
+}
+ 
+div#calendar div.header a.prev,div#calendar div.header a.next{ 
+    position:absolute;
+    top:0px;   
+    height: 17px;
+    display:block;
+    cursor:pointer;
+    text-decoration:none;
+    color:#FFF;
+}
+ 
+div#calendar div.header span.title{
+    color:#FFF;
+    font-size:18px;
+}
+ 
+ 
+div#calendar div.header a.prev{
+    left:0px;
+}
+ 
+div#calendar div.header a.next{
+    right:0px;
+}
+ 
+ 
+ 
+ 
+/*******************************Calendar Content Cells*********************************/
+div#calendar div.box-content{
+    border:1px solid #787878 ;
+    border-top:none;
+}
+ 
+ 
+ 
+div#calendar ul.label{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+    margin-top:5px;
+    margin-left: 5px;
+}
+ 
+div#calendar ul.label li{
+    margin:0px;
+    padding:0px;
+    margin-right:5px;  
+    float:left;
+    list-style-type:none;
+    width:80px;
+    height:40px;
+    line-height:40px;
+    vertical-align:middle;
+    text-align:center;
+    color:#000;
+    font-size: 15px;
+    background-color: transparent;
+}
+ 
+ 
+div#calendar ul.dates{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+ 
+/** overall width = width+padding-right**/
+div#calendar ul.dates li{
+    margin:0px;
+    padding:0px;
+    margin-right:5px;
+    margin-top: 5px;
+    line-height:80px;
+    vertical-align:middle;
+    float:left;
+    list-style-type:none;
+    width:80px;
+    height:80px;
+    font-size:25px;
+    background-color: #DDD;
+    color:#000;
+    text-align:center; 
+}
+ 
+:focus{
+    outline:none;
+}
+ 
+.clear{
+    clear:both;
+}  
+
+.calendar
+{
+    width: 90%;
+    margin-left: 50px;
+}
+
+.intro
+{
+    width: 80%;
+    margin-left: 96px;
+    padding: 18px;
+}
+
+.pintro
+{
+        width: 90%;
+    margin-left: 27px;
+}
+
+.not_take
+{
+        width: 80%;
+    margin-left: 91px;
+}
+
+.bits
+{
+        color: red;
+    font-size: 33px;
+}
+
+.col-lg-6 {
+    width: 46% !important;
+    margin-left: 28px;
+    height: 39px;
+    float: left;
+}
+
+/* helplines */
+
+.col-box
+{
+    width: 90%;
+    margin-left: 45px;
+}
+
+.col-title
+{
+width: 72%;
+    height: 88px;
+    margin-left: 135px;
+    font-size: 4em;
+    color: #0C0C0C;
+    padding: 5px;
+}
+
+.col-ds
+{
+    width:80%;
+    height:80px;
+    margin-left: 85px;
+}
+
+.col-help
+{
+width: 60%;
+    float: left;
+    margin-left: 63px;
+    margin-bottom: 20px;
+}
+
+.col-img
+{
+    width: 16%;
+    height: 70px;
+    float: left;
+}
+
+.col-info
+{
+    width:60%;
+    float:left;
+}
+
+.col-name
+{
+    width: 90%;
+    float: left;
+    color: blue;
+    margin-left: 17px;
+}
+
+.col-help-info
+{
+    width:100%;
+    float:left;
+        height: auto;
+}
+
+.col-link
+{
+    width:100%;
+    float:left;
+    height: 20px;
+}
+
+.helplines-logo
+{
+    width: 80%;
+    height: 80%;
+}
+
+
+}

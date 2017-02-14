@@ -1,0 +1,46 @@
+courses types
+
+Honours Degrees
+Integrated Masters Degrees
+Foundation Degrees
+Diplomas Of Higher Education
+Certificates Of Higher Education
+Open University Certificates
+Open Qualifications
+Short Courses
+All Courses
+
+
+courses
+
+id
+title
+type
+teacher
+link
+img
+
+
+
+
+courseList
+
+id
+course_id
+student_id
+Teacher_id
+
+
+teacher
+
+id
+course id
+
+couseInfo
+
+id
+course_id
+description
+name
+skills
+

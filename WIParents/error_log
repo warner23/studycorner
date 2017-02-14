@@ -1,0 +1,6 @@
+[07-Oct-2016 19:15:54 UTC] PHP Parse error:  syntax error, unexpected T_WHILE in /home/warner/public_html/CareerBound/WIParents/WICore/WIClass/WIParent.php on line 33
+[07-Oct-2016 19:16:25 UTC] PHP Warning:  PDOStatement::execute() [<a href='pdostatement.execute'>pdostatement.execute</a>]: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'student' in 'where clause' in /home/warner/public_html/CareerBound/WIParents/WICore/WIClass/WIParent.php on line 31
+[07-Oct-2016 19:17:17 UTC] PHP Warning:  PDOStatement::execute() [<a href='pdostatement.execute'>pdostatement.execute</a>]: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'student' in 'where clause' in /home/warner/public_html/CareerBound/WIParents/WICore/WIClass/WIParent.php on line 31
+[07-Oct-2016 19:17:52 UTC] PHP Warning:  PDOStatement::execute() [<a href='pdostatement.execute'>pdostatement.execute</a>]: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'student' in 'where clause' in /home/warner/public_html/CareerBound/WIParents/WICore/WIClass/WIParent.php on line 31
+[07-Oct-2016 19:19:20 UTC] PHP Notice:  Undefined index: username in /home/warner/public_html/CareerBound/WIParents/WICore/WIClass/WIParent.php on line 36
+[07-Oct-2016 19:20:56 UTC] PHP Notice:  Undefined index: username in /home/warner/public_html/CareerBound/WIParents/WICore/WIClass/WIParent.php on line 36
