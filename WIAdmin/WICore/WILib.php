@@ -19,12 +19,15 @@ $DB_USER    = 'warner_Master' ;
 $DB_PASS    = 'taylor22' ;
 $DB_NAME    = 'warner_WICMS' ;
 
-define('HOST', 'mysql1003.mochahost.com');
-define('DBNAME' , 'warner_WICMS');
-define('PORT' , '3306');
+define("HOST", "**********"); 
 
-define('USERNAME', 'warner_Master');
-define('PASSWORD', 'taylor22');
+define("TYPE", "mysql"); 
+
+define("USER", "*******"); 
+
+define("PASS", "********"); 
+
+define("NAME", "***********"); 
 
 /* SITE INFO   */
 /* site info  */
